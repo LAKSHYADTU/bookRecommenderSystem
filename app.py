@@ -3,10 +3,10 @@ import pickle
 import numpy as np
 import pandas as pd
 
-popular_df = pickle.load(open(r'/Users/lakshya/Desktop/MACHINE LEARNING/project/bookRecommendorSystem/popular.pkl','rb'))  # r means raw string 
-pt = pickle.load(open(r'/Users/lakshya/Desktop/MACHINE LEARNING/project/bookRecommendorSystem/pt.pkl','rb'))
-books = pickle.load(open(r'/Users/lakshya/Desktop/MACHINE LEARNING/project/bookRecommendorSystem/books.pkl','rb'))
-similarity_scores = pickle.load(open(r'/Users/lakshya/Desktop/MACHINE LEARNING/project/bookRecommendorSystem/similarity_scores.pkl','rb'))
+popular_df = pickle.load(open(r'popular.pkl','rb'))  # r means raw string 
+pt = pickle.load(open(r'pt.pkl','rb'))
+books = pickle.load(open(r'books.pkl','rb'))
+similarity_scores = pickle.load(open(r'similarity_scores.pkl','rb'))
 
 app = Flask(__name__)
 
